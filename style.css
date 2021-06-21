@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    background-color:white;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    margin: auto;
+    margin-top: 1%;
+    text-shadow: black;
+}
+
+.contentContainer{
+    text-align: center;
+    align-content: center;
+    background-color: red;
+    width: 50%;
+    margin: auto;
+    margin-top: 1%;
+    background-color: rgba(85, 75, 0, .5);
+    padding: 20px;
+}
+
+.button {
+    width: 10%;
+    font-size: 100%;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+    cursor: auto;
+    box-shadow: black;
+    font-style: normal;
+    
+}
+
+.slider{
+    margin: 10px;
+    width: 90%; 
+    height: 10px; 
+    background:whitesmoke;
+    outline: none;
+    opacity: 0.8;
+}
+
+.slider:hover{
+    opacity: 1;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px; 
+    height: 25px; 
+    cursor: pointer; 
+  }
+
+.slider::after{
+    content: '180'; 
+    font-size: medium;
+    position: absolute;
+    right: 25%;
+    text-shadow: black;
+}
+
+.slider::before{
+    content: '0';
+    font-size: medium;
+    position: absolute;
+    left: 26%;
+    text-shadow: black;
+}
+
+#bgvid {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    filter: blur(10px);
+    overflow: hidden;
+    z-index: -1;
+}
